@@ -1,1 +1,25 @@
-asdf
+.row
+    .span4.offset4
+        %div{:id => "myCarousel", :class => "carousel slide"}
+            .carousel-inner.homeslideshow
+                .active.item
+                    = image_tag("/images/kat1.jpeg")
+
+
+                .item
+                    = image_tag("/images/kat2.jpeg")
+
+                .item
+                    = image_tag("/images/kat3.jpeg")
+
+                .item
+                    = image_tag("/images/kat4.jpeg")
+
+
+                .item
+                    = image_tag("/images/kat5.jpeg")
+
+            %a{:href => "#myCarousel", :class=> "carousel-control left", :"data-slide"=>"prev"}
+                &lsaquo;
+            %a{:href => "#myCarousel", :class=> "carousel-control right", :"data-slide"=>"next"}
+                &rsaquo;
