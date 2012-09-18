@@ -1,0 +1,58 @@
+.container
+    .navbar.navbar-inverse
+        .navbar-inner
+            .special
+                %ul.nav
+                    -if params[:action] == "home"
+                        %li.active
+                            %a{:href=>"home"}
+                                Home
+                    -else
+                        %li
+                            %a{:href=>"home"}
+                                Home
+                    -if params[:action] == "about"
+                        %li.active
+                            %a{:href=>"about"}
+                                About
+                    -else
+                        %li
+                            %a{:href=>"about"}
+                                About
+                    -if params[:action] == "acts"
+                        %li.active
+                            %a{:href=>"acts"}
+                                Acts
+                    -else
+                        %li
+                            %a{:href=>"acts"}
+                                Acts
+                    -if params[:action] == "teaching"
+                        %li.active
+                            %a{:href=>"teaching"}
+                                Teaching
+                    -else
+                        %li
+                            %a{:href=>"teaching"}
+                                Teaching
+
+                            
+                    -if params[:action] == "gallery"
+                        %li.active
+                            %a{:href=>"gallery"}
+                                Gallery
+                    -else
+                        %li
+                            %a{:href=>"gallery"}
+                                Gallery
+                            
+                    -if params[:action] == "contact"
+                        %li.active
+                            %a{:href=>"contact"}
+                            
+                                Contact
+                    -else
+                        %li
+                            %a{:href=>"contact"}
+                                Contact
+                
